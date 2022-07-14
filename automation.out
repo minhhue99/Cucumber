@@ -1,10 +1,1 @@
-2022-07-06 14:07:981 INFO  ServiceHooks:34 - Verify page title, login function, adding and removing product on Saucedemo is Failed
-2022-07-06 14:07:418 INFO  WaitHelper:23 - waiting for element visibilityOf..
-2022-07-06 14:07:488 INFO  WaitHelper:26 - element is visible..
-2022-07-06 14:07:555 INFO  ServiceHooks:43 - Verify can enter and submit form is pass
-2022-07-06 14:07:861 INFO  WaitHelper:23 - waiting for element visibilityOf..
-2022-07-06 14:07:902 INFO  WaitHelper:26 - element is visible..
-2022-07-06 14:07:940 INFO  ServiceHooks:43 - Verify can enter and submit form with data-driven is pass
-2022-07-06 14:07:261 INFO  WaitHelper:23 - waiting for element visibilityOf..
-2022-07-06 14:07:296 INFO  WaitHelper:26 - element is visible..
-2022-07-06 14:07:335 INFO  ServiceHooks:43 - Verify can enter and submit form with data-driven is pass
+2022-07-14 17:07:678 INFO  ServiceHooks:36 - Verify that user can search by the valid information, select and book a room, make payment with credit card is Failed

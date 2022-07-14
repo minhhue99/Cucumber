@@ -14,6 +14,7 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 
+
 public class ServiceHooks {
 
 	TestBase testBase;
@@ -24,6 +25,7 @@ public class ServiceHooks {
 	public void initializeTest() {
 		testBase = new TestBase();
 		testBase.selectBrowser(Browsers.CHROME.name());
+		TestBase.driver.get("http://14.176.232.213:8084/");
 	}
 
 	@After

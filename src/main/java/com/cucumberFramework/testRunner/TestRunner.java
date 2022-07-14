@@ -12,8 +12,9 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = 
 
-{"src/test/resources/features/Hue/Testpages.feature",		
- "src/test/resources/features/Hue/Saucedemo.feature"}		
+//{"src/test/resources/features/Hue/Testpages.feature",		
+ "src/test/resources/features/Module/Search_Booking_Payment.feature"
+//"src/test/resources/features/Module/Login.feature"
 
 , glue = { "com/cucumberFramework/stepdefinitions" }
 //, tags = {"@RegressionTest"}
