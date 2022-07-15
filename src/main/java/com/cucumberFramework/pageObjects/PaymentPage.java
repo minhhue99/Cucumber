@@ -34,6 +34,9 @@ public class PaymentPage {
 	@FindBy(xpath = "//form[@id='cardForm']//input[@value='Pay Now']")
 	public WebElement paynowButton;
 	
+	@FindBy(xpath = "//div[@class='alert alert-success']")
+	public WebElement successbookingmsg;
+	
 	public void enterCardnumber(String input) {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", cardnumberField);
@@ -65,5 +68,10 @@ public class PaymentPage {
 		jss.executeScript("arguments[0].scrollIntoView(true);", paynowButton);
 		jss.executeScript("arguments[0].click()", paynowButton);
 	}
+	
+	public void verifysuccessbookingmsg(String input) {
+		
+	}
+	
 
 }
