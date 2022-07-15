@@ -53,5 +53,14 @@ public class LoginPage {
 	public void clickonSignin() {
 		signinButton.click();
 	}
+	
+	public void loginwithcustomeraccount() {
+		loginTab.click();
+		waitHelper.WaitForElement(usernameField, 10);
+		usernameField.sendKeys("hoangny");
+		waitHelper.WaitForElement(passwordField, 10);
+		passwordField.sendKeys("123456");
+		signinButton.click();
+	}
 
 }

@@ -37,6 +37,7 @@ public class PaymentPage {
 	public void enterCardnumber(String input) {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", cardnumberField);
+		waitHelper.WaitForElement(cardnumberField, 10);
 		cardnumberField.sendKeys(input);
 	}
 	

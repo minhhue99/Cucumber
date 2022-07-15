@@ -4,6 +4,7 @@ import com.cucumberFramework.helper.WaitHelper;
 import com.cucumberFramework.pageObjects.BookingPage;
 import com.cucumberFramework.pageObjects.PaymentPage;
 import com.cucumberFramework.pageObjects.SearchPage;
+import com.cucumberFramework.pageObjects.LoginPage;
 import com.cucumberFramework.testBase.TestBase;
 
 import cucumber.api.java.en.And;
@@ -20,17 +21,17 @@ public class SearchBookingPaymentStepdefinition  extends TestBase {
 	SearchPage searchPage = new SearchPage (driver);
 	BookingPage bookingPage = new BookingPage (driver);
 	PaymentPage paymentPage = new PaymentPage (driver);
+	LoginPage loginPage = new LoginPage (driver);
 	WaitHelper waitHelper = new WaitHelper(driver);
 	
-//	@Given("^I am on the page$")
-//	public void i_am_on_the_page() throws Throwable {
-//		driver.get(Constants.pageurl);
-//	}
+	@Given("^Login with customer account$")
+	public void login_with_customer_account () throws Throwable {
+		loginPage.loginwithcustomeraccount();
+	}
 	
 	@When("^Enter check-in date \"([^\"]*)\"$")
 	public void enter_checkin_date (String checkin) throws Throwable {
 		searchPage.enterCheckinDate(checkin);
-		Thread.sleep(2000);
 	}
 	
 	@And("^Enter check-out date \"([^\"]*)\"$")

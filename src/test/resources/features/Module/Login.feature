@@ -1,7 +1,7 @@
 @tag
 Feature: Login functionality
 
-  @SmokeTest
+  @SmokeTest @RegressionTest
   Scenario Outline: Verify successful login with valid <role> account
     When Click on Login tab
     When I enter username with outline <username>
@@ -16,7 +16,7 @@ Feature: Login functionality
      |Customer|hoangny	|123456		|U799710			|
      
      
-  @SmokeTest
+  @SmokeTest @RegressionTest
   Scenario Outline: Verify error message when loginning with <case>
     When Click on Login tab
     When I enter username with outline <username>
