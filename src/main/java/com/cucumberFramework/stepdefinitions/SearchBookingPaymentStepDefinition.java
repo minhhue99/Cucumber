@@ -1,7 +1,8 @@
 package com.cucumberFramework.stepdefinitions;
 
-
 import com.cucumberFramework.helper.WaitHelper;
+import com.cucumberFramework.pageObjects.BookingPage;
+import com.cucumberFramework.pageObjects.PaymentPage;
 import com.cucumberFramework.pageObjects.SearchPage;
 import com.cucumberFramework.testBase.TestBase;
 
@@ -12,10 +13,13 @@ import cucumber.api.java.en.When;
 
 import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 
-public class SearchStepDefinition extends TestBase {
+public class SearchBookingPaymentStepdefinition  extends TestBase {
 	
 	SearchPage searchPage = new SearchPage (driver);
+	BookingPage bookingPage = new BookingPage (driver);
+	PaymentPage paymentPage = new PaymentPage (driver);
 	WaitHelper waitHelper = new WaitHelper(driver);
 	
 //	@Given("^I am on the page$")
@@ -50,52 +54,67 @@ public class SearchStepDefinition extends TestBase {
 	}
 	
 	@When("^Click on View Details button$")
-	public void click_on_view_detail_button () throws Throwable {
-		searchPage.clickonViewdetails();
+	public void click_on_view_details_button () throws Throwable {
+		bookingPage.clickonViewdetails();
 	}
 	
 	@When("^Click on Book Now button$")
 	public void click_on_book_now_button () throws Throwable {
-		searchPage.clickonBooknow();
+		bookingPage.clickonBooknow();
 	}
 	
 	@When("^Enter Fullname \"([^\"]*)\"$")
 	public void enter_fullname (String fullname) throws Throwable {
-		searchPage.enterFullname(fullname);
+		bookingPage.enterFullname(fullname);
 	}
 	
 	@And("^Enter Email \"([^\"]*)\"$")
 	public void enter_email (String email) throws Throwable {
-		searchPage.enterEmail(email);
+		bookingPage.enterEmail(email);
 	}
 	
 	@And("^Enter Phone \"([^\"]*)\"$")
 	public void enter_phone (String phone) throws Throwable {
-		searchPage.enterPhone(phone);
+		bookingPage.enterPhone(phone);
 	}
 	
 	@And("^Enter Address \"([^\"]*)\"$")
 	public void enter_address (String address) throws Throwable {
-		searchPage.enterAddress(address);
+		bookingPage.enterAddress(address);
 	}
 	
 	@When("^I tick Checkbox$")
 	public void I_tick_checkbox () throws Throwable {
-		searchPage.tickCheckbox();
+		bookingPage.tickCheckbox();
 	}
 	
 	@When("^I click on Submit$")
 	public void I_click_on_submit () throws Throwable {
-		searchPage.clickonSubmit();
+		bookingPage.clickonSubmit();
 	}
 	
+	@When("^Enter card number \"([^\"]*)\"$")
+	public void enter_card_number (String cardnumber) throws Throwable {
+		paymentPage.enterCardnumber(cardnumber);
+	}
 	
+	@And("^Enter name on card \"([^\"]*)\"$")
+	public void enter_name_on_card (String nameoncard) throws Throwable {
+		paymentPage.enterNameoncard(nameoncard);
+	}
 	
+	@And("^Enter expiry date \"([^\"]*)\"$")
+	public void enter_expiry_date (String expirydate) throws Throwable {
+		paymentPage.enterExpirydate(expirydate);
+	}
 	
+	@And ("^Enter CVV number \"([^\"]*)\"$")
+	public void enter_cvv_number (String number) throws Throwable {
+		paymentPage.enterCVVnumber(number);
+	}
 	
-	
-	
-	
-	
-
+	@When("^I click on Pay Now button$")
+	public void I_click_on_pay_now_button() throws Throwable {
+		paymentPage.clickonPaynow();
+	}
 }

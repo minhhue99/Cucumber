@@ -6,17 +6,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.cucumberFramework.helper.WaitHelper; 
+import com.cucumberFramework.helper.WaitHelper;
 
 public class PaymentPage {
 	
 	private WebDriver driver;
 	WaitHelper waitHelper;
+
 	public PaymentPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
 	}
-
+	
 	@FindBy(xpath = "//input[@id='cardNumber']")
 	public WebElement cardnumberField;
 
@@ -60,14 +62,7 @@ public class PaymentPage {
 	public void clickonPaynow() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", paynowButton);
-		paynowButton.click();
+		jss.executeScript("arguments[0].click()", paynowButton);
 	}
-	
-	
-	
-	
-	
-	
-}
-	
 
+}

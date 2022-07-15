@@ -1,5 +1,5 @@
 @tag
-Feature: Search_Booking_Payment
+Feature: SearchBookingPayment
 
   @SmokeTest
   Scenario: Verify that user can search by the valid information, select and book a room, make payment with credit card
