@@ -1,7 +1,1 @@
-2022-07-15 17:07:438 INFO  WaitHelper:23 - waiting for element visibilityOf..
-2022-07-15 17:07:170 INFO  WaitHelper:26 - element is visible..
-2022-07-15 17:07:281 INFO  WaitHelper:23 - waiting for element visibilityOf..
-2022-07-15 17:07:332 INFO  WaitHelper:26 - element is visible..
-2022-07-15 17:07:178 INFO  WaitHelper:23 - waiting for element visibilityOf..
-2022-07-15 17:07:803 INFO  WaitHelper:26 - element is visible..
-2022-07-15 17:07:651 INFO  ServiceHooks:45 - Verify that user can cancel a booking if check-in date has not come yet is pass
+2022-07-18 17:07:11 INFO  ServiceHooks:47 - Verify that all available rooms are shown when inputting the valid information is pass

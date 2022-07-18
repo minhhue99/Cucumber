@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.cucumberFramework.helper.WaitHelper;
+import com.cucumberFramework.helper.Constants;
 
 public class PaymentPage {
 	
@@ -37,30 +38,30 @@ public class PaymentPage {
 	@FindBy(xpath = "//div[@class='alert alert-success']")
 	public WebElement successbookingmsg;
 	
-	public void enterCardnumber(String input) {
+	public void enterCardnumber() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", cardnumberField);
 		waitHelper.WaitForElement(cardnumberField, 10);
-		cardnumberField.sendKeys(input);
+		cardnumberField.sendKeys(Constants.card_number);
 	}
 	
-	public void enterNameoncard(String input) {
+	public void enterNameoncard() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", nameoncardField);
-		nameoncardField.sendKeys(input);
+		nameoncardField.sendKeys(Constants.name_on_card);
 	}
 	
-	public void enterExpirydate(String input) {
+	public void enterExpirydate() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", expirydateField);
-		expirydateField.sendKeys(input);
+		expirydateField.sendKeys(Constants.expiry_date);
 	}
 	
-	public void enterCVVnumber(String input) {
+	public void enterCVVnumber() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", cvvnumberField);
 		cvvnumberField.clear();
-		cvvnumberField.sendKeys(input);
+		cvvnumberField.sendKeys(Constants.cvv);
 	}
 	
 	public void clickonPaynow() {
@@ -69,9 +70,6 @@ public class PaymentPage {
 		jss.executeScript("arguments[0].click()", paynowButton);
 	}
 	
-	public void verifysuccessbookingmsg(String input) {
 		
-	}
-	
 
 }

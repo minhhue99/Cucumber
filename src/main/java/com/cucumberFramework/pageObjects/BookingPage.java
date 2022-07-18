@@ -1,5 +1,9 @@
 package com.cucumberFramework.pageObjects;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,9 +11,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.cucumberFramework.helper.WaitHelper;
+import com.google.common.base.CharMatcher;
+import com.cucumberFramework.helper.Constants;
 
 public class BookingPage {
-	
+
 	private WebDriver driver;
 	WaitHelper waitHelper;
 
@@ -43,6 +49,15 @@ public class BookingPage {
 	@FindBy(xpath = "//input[@value='Submit']")
 	public WebElement submitButton;
 
+	@FindBy(xpath = "//strong[contains(.,'adult')]")
+	public List<WebElement> adultEle;
+
+	@FindBy(xpath = "//strong[contains(.,'children')]")
+	public List<WebElement> childrenEle;
+
+	@FindBy(xpath = "/html/body/section[2]/div/div/div/div/div[2]")
+	public List<WebElement> roomList;
+
 	public void clickonViewdetails() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", viewdetailButton);
@@ -61,23 +76,52 @@ public class BookingPage {
 		fullnameField.sendKeys(input);
 	}
 
-	public void enterEmail(String input) {
-		emailField.sendKeys(input);
+	public void verify_AdultNumber_ChildrenNumber() {
+//		JavascriptExecutor jss = (JavascriptExecutor) driver;
+//		jss.executeScript("arguments[0].scrollIntoView(true);", viewdetailButton);
+//		for (int countAdult = 1; countAdult <= adultEle.size(); countAdult++) {
+//			String expectedAdultNumberString = adultEle.get(countAdult).getText();
+//			int expectedAdultNumber = Integer.parseInt(expectedAdultNumberString.replaceAll("[^0-9]", ""));
+//			System.out.println(expectedAdultNumber);
+//			if (expectedAdultNumber >= Constants.aduld_number) {	
+//				
+//			}
+//		}
+
+//		for (int countChildren = 0; countChildren <= childrenEle.size(); countChildren++) {
+//			String expectedChildrenNumberString = childrenEle.get(countChildren).getText();
+//			int expectedChildrenNumber = Integer.parseInt(expectedChildrenNumberString.replaceAll("[^0-9]", ""));
+//			System.out.println(expectedChildrenNumber);
+////			if (expectedAdultNumber >= Constants.aduld_number) {
+
+//			}
+
+		List<Room> listOfRoom = new ArrayList<>();
+
+		for (int i = 0; i < roomList.size(); i++) {
+
+			String roomname = roomList.get(i).findElement(By.xpath("div/h5")).getText();
+			System.out.println(roomname);
+
+			String Adult = roomList.get(i).findElement(By.xpath("div/div[1]/strong[1]")).getText().replaceAll("[^0-9]",
+					"");
+			int adult = Integer.parseInt(Adult);
+			System.out.println(adult);
+
+			String Children = roomList.get(i).findElement(By.xpath("div/div[1]/strong[2]")).getText()
+					.replaceAll("[^0-9]", "");
+			int children = Integer.parseInt(Children);
+			System.out.println(children);
+
+			String price = roomList.get(i).findElement(By.xpath("div/p/strong")).getText().replace("$", "");
+			double Price = Double.parseDouble(price);
+			System.out.println(Price);
+
+		}
+		if (adult >= Constants.aduld_number && children >= Constants.children_number) {
+			
+		}
+
 	}
 
-	public void enterPhone(String input) {
-		phoneField.sendKeys(input);
-	}
-
-	public void enterAddress(String input) {
-		addressField.sendKeys(input);
-	}
-
-	public void tickCheckbox() {
-		checkbox.click();
-	}
-
-	public void clickonSubmit() {
-		submitButton.click();
-	}
 }

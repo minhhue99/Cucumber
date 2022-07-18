@@ -1,20 +1,18 @@
 package com.cucumberFramework.pageObjects;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.cucumberFramework.helper.WaitHelper;
+import com.cucumberFramework.helper.Constants;
 
 public class SearchPage {
 
-	private WebDriver driver;
 	WaitHelper waitHelper;
 
 	public SearchPage(WebDriver driver) {
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
 	}
@@ -42,12 +40,14 @@ public class SearchPage {
 		checkoutField.sendKeys(input);
 	}
 
-	public void enterNumberofAdult(String input) {
-		adultField.sendKeys(input);
+	public void enterNumberofAdult() {
+		String adultNumberString = Integer.toString(Constants.aduld_number);
+		adultField.sendKeys(adultNumberString);
 	}
 
-	public void enterNumberofChildren(String input) {
-		childrenField.sendKeys(input);
+	public void enterNumberofChildren() {
+		String childrenNumberString = Integer.toString(Constants.children_number);
+		childrenField.sendKeys(childrenNumberString);
 	}
 
 	public void clickonSearch() {

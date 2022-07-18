@@ -3,10 +3,8 @@ package com.cucumberFramework.stepdefinitions;
 import com.cucumberFramework.helper.WaitHelper;
 import com.cucumberFramework.pageObjects.LoginPage;
 import com.cucumberFramework.testBase.TestBase;
-import com.cucumberFramework.helper.Constants;
 
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -17,12 +15,6 @@ public class LoginStepdefinition extends TestBase {
 
 	LoginPage loginPage = new LoginPage(driver);
 	WaitHelper waitHelper = new WaitHelper(driver);
-
-
-//	@Given("^I am on the Gwesty page$")
-//	public void i_am_on_the_page() throws Throwable {
-//		driver.get(Constants.pageurl);
-//	}
 		
 	@When("^Click on Login tab$")
 	public void click_on_login_tab () throws Throwable {

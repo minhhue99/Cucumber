@@ -12,13 +12,14 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = 
 
-//"src/test/resources/features/Module/SearchBookingPayment.feature"
+"src/test/resources/features/Module/SearchBookingPayment.feature"
+//"src/test/resources/features/Module/SetupRooms.feature"
 //"src/test/resources/features/Module/Login.feature",
 //"src/test/resources/features/Module/Check.feature",
-"src/test/resources/features/Module/Cancel.feature"
+//"src/test/resources/features/Module/Cancel.feature"
 
 , glue = { "com/cucumberFramework/stepdefinitions" }
-//, tags = {"@RegressionTest"}
+, tags = {"@Test1"}
 , plugin = { "json:target/cucumber-reports/CucumberReport.json" }
 ,monochrome = true
 ,dryRun = false)

@@ -1,7 +1,5 @@
 package com.cucumberFramework.stepdefinitions;
 
-import static org.testng.Assert.assertTrue;
-
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -13,7 +11,6 @@ import com.cucumberFramework.pageObjects.LoginPage;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import static org.testng.Assert.assertEquals;
@@ -64,9 +61,5 @@ public class CancelStepdefinition extends TestBase {
 	@And("^Verify the number of canceled booking is decreased by 1$")
 	public void verify_the_number_of_canceledbooking () throws Throwable {
 		assertEquals(b,a-1);
-	}
-	
-	
-	
-	
+	}	
 }

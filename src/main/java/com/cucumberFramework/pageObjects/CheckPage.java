@@ -9,11 +9,9 @@ import com.cucumberFramework.helper.WaitHelper;
 
 public class CheckPage {
 
-	private WebDriver driver;
 	WaitHelper waitHelper;
 
 	public CheckPage(WebDriver driver) {
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
 	}

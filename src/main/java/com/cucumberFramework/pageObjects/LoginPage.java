@@ -9,11 +9,9 @@ import com.cucumberFramework.helper.WaitHelper;
 
 public class LoginPage {
 
-	private WebDriver driver;
 	WaitHelper waitHelper;
 
 	public LoginPage(WebDriver driver) {
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
 	}
@@ -42,7 +40,7 @@ public class LoginPage {
 
 	public void enterUsername(String input1) {
 		waitHelper.WaitForElement(usernameField, 10);
-		usernameField.sendKeys(input1);
+		this.usernameField.sendKeys(input1);
 	}
 
 	public void enterPassword(String input2) {
@@ -58,6 +56,15 @@ public class LoginPage {
 		loginTab.click();
 		waitHelper.WaitForElement(usernameField, 10);
 		usernameField.sendKeys("hoangny");
+		waitHelper.WaitForElement(passwordField, 10);
+		passwordField.sendKeys("123456");
+		signinButton.click();
+	}
+	
+	public void loginwithadminaccount() {
+		loginTab.click();
+		waitHelper.WaitForElement(usernameField, 10);
+		usernameField.sendKeys("admin");
 		waitHelper.WaitForElement(passwordField, 10);
 		passwordField.sendKeys("123456");
 		signinButton.click();

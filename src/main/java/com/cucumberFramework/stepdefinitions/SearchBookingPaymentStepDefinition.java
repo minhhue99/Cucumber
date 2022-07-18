@@ -13,8 +13,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import static org.testng.Assert.assertTrue;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 
 public class SearchBookingPaymentStepdefinition  extends TestBase {
 	
@@ -39,14 +37,14 @@ public class SearchBookingPaymentStepdefinition  extends TestBase {
 		searchPage.enterCheckoutDate(checkout);
 	}
 	
-	@And("^Enter number of adult \"([^\"]*)\"$")
-	public void enter_number_of_adult (String adult) throws Throwable {
-		searchPage.enterNumberofAdult(adult);
+	@And("^Enter number of adult$")
+	public void enter_number_of_adult () throws Throwable {
+		searchPage.enterNumberofAdult();
 	}
 	
-	@And("^Enter number of children \"([^\"]*)\"$")
-	public void enter_number_of_children (String children) throws Throwable {
-		searchPage.enterNumberofChildren(children);
+	@And("^Enter number of children$")
+	public void enter_number_of_children () throws Throwable {
+		searchPage.enterNumberofChildren();
 	}
 	
 	@When("^Click on Search button$")
@@ -71,51 +69,61 @@ public class SearchBookingPaymentStepdefinition  extends TestBase {
 	
 	@And("^Enter Email \"([^\"]*)\"$")
 	public void enter_email (String email) throws Throwable {
-		bookingPage.enterEmail(email);
+		bookingPage.emailField.sendKeys(email);
 	}
 	
 	@And("^Enter Phone \"([^\"]*)\"$")
 	public void enter_phone (String phone) throws Throwable {
-		bookingPage.enterPhone(phone);
+		bookingPage.phoneField.sendKeys(phone);
 	}
 	
 	@And("^Enter Address \"([^\"]*)\"$")
 	public void enter_address (String address) throws Throwable {
-		bookingPage.enterAddress(address);
+		bookingPage.addressField.sendKeys(address);
 	}
 	
 	@When("^I tick Checkbox$")
 	public void I_tick_checkbox () throws Throwable {
-		bookingPage.tickCheckbox();
+		bookingPage.checkbox.click();
 	}
 	
 	@When("^I click on Submit$")
 	public void I_click_on_submit () throws Throwable {
-		bookingPage.clickonSubmit();
+		bookingPage.submitButton.click();
 	}
 	
-	@When("^Enter card number \"([^\"]*)\"$")
-	public void enter_card_number (String cardnumber) throws Throwable {
-		paymentPage.enterCardnumber(cardnumber);
+	@When("^Enter card number$")
+	public void enter_card_number () throws Throwable {
+		paymentPage.enterCardnumber();
 	}
 	
-	@And("^Enter name on card \"([^\"]*)\"$")
-	public void enter_name_on_card (String nameoncard) throws Throwable {
-		paymentPage.enterNameoncard(nameoncard);
+	@And("^Enter name on card$")
+	public void enter_name_on_card () throws Throwable {
+		paymentPage.enterNameoncard();
 	}
 	
-	@And("^Enter expiry date \"([^\"]*)\"$")
-	public void enter_expiry_date (String expirydate) throws Throwable {
-		paymentPage.enterExpirydate(expirydate);
+	@And("^Enter expiry date$")
+	public void enter_expiry_date () throws Throwable {
+		paymentPage.enterExpirydate();
 	}
 	
-	@And ("^Enter CVV number \"([^\"]*)\"$")
-	public void enter_cvv_number (String number) throws Throwable {
-		paymentPage.enterCVVnumber(number);
+	@And ("^Enter CVV number$")
+	public void enter_cvv_number () throws Throwable {
+		paymentPage.enterCVVnumber();
 	}
 	
 	@When("^I click on Pay Now button$")
 	public void I_click_on_pay_now_button() throws Throwable {
 		paymentPage.clickonPaynow();
+	}
+	
+	@Then ("^I see the success message \"([^\"]*)\"$")
+	public void I_see_the_success_message (String message) {
+		assertTrue(paymentPage.successbookingmsg.getText().contains(message));
+	}
+	
+	@When("^I can see the displayed available rooms$")
+	public void verify_available_room() throws Throwable {
+		bookingPage.verify_AdultNumber_ChildrenNumber();
 	}
 }

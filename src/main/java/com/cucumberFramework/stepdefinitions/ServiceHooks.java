@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriverException;
 import com.cucumberFramework.enums.Browsers;
 import com.cucumberFramework.helper.LoggerHelper;
 import com.cucumberFramework.testBase.TestBase;
+import com.cucumberFramework.helper.Constants;
+
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -25,7 +27,7 @@ public class ServiceHooks {
 	public void initializeTest() {
 		testBase = new TestBase();
 		testBase.selectBrowser(Browsers.CHROME.name());
-		TestBase.driver.get("http://14.176.232.213:8084/");
+		TestBase.driver.get(Constants.pageurl);
 	}
 
 	@After
@@ -49,6 +51,6 @@ public class ServiceHooks {
 			}
 		}
 
-//		TestBase.driver.quit();
+		TestBase.driver.quit();
 	}
 }
