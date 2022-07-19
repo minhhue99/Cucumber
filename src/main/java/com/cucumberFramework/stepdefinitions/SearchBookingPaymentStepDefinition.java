@@ -12,8 +12,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import static org.testng.Assert.assertTrue;
-
 public class SearchBookingPaymentStepdefinition  extends TestBase {
 	
 	SearchPage searchPage = new SearchPage (driver);
@@ -119,11 +117,7 @@ public class SearchBookingPaymentStepdefinition  extends TestBase {
 	
 	@Then ("^I see the success message \"([^\"]*)\"$")
 	public void I_see_the_success_message (String message) {
-		assertTrue(paymentPage.successbookingmsg.getText().contains(message));
+		paymentPage.verifySuccessMsg(message);
 	}
 	
-	@When("^I can see the displayed available rooms$")
-	public void verify_available_room() throws Throwable {
-		bookingPage.verify_AdultNumber_ChildrenNumber();
-	}
 }

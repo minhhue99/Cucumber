@@ -9,4 +9,4 @@ Feature: Cancel Booking
   And Click on Cancel button
   When I select the reason
   And Click on Cancel Submit button
-	Then Verify the number of canceled booking is decreased by 1
+	Then I see that the number of canceled booking is decreased by 1

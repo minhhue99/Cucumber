@@ -1,5 +1,7 @@
 package com.cucumberFramework.pageObjects;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -68,6 +70,10 @@ public class PaymentPage {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", paynowButton);
 		jss.executeScript("arguments[0].click()", paynowButton);
+	}
+	
+	public void verifySuccessMsg(String input) {
+		assertTrue(successbookingmsg.getText().contains(input));
 	}
 	
 		

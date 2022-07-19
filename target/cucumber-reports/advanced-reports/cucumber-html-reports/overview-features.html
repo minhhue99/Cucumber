@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
+                13,
                 0,
-                1,
-                14,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 15) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 13) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                1
+                2,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberFramework</td>
         <td>1.0</td>
-      <td>12 Jul 2022, 13:39</td>
+      <td>19 Jul 2022, 13:45</td>
     </tr>
   </tbody>
 </table>
@@ -325,54 +325,54 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_1763237414.html">As an end-user I should be able to carry out functions on Saucedemo</a></td>
+        <td class="tagname"><a href="report-feature_621746071.html">Search for available room</a></td>
 
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >14</td>
+        <td      class="passed"    >13</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">15</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">13</td>
 
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="207232700">0.207</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="6926391800">6.926</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>0</td>
-      <td>1</td>
-      <td>14</td>
+      <td>13</td>
       <td>0</td>
       <td>0</td>
-      <td>15</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13</td>
 
+      <td>2</td>
       <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>2</td>
 
-      <td class="duration">0.207</td>
+      <td class="duration">6.926</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>0.00%</td>
-      <td>6.67%</td>
-      <td>93.33%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

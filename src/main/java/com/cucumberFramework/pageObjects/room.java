@@ -1,17 +1,21 @@
 package com.cucumberFramework.pageObjects;
 
-public class Room {
+import org.openqa.selenium.WebElement;
+
+public class room {
 
 	String roomName = "";
 	int roomAdult, roomChildren;
 	double roomPrice;
+	WebElement viewdetail;
 
-	public void room (String pname,int padult, int pchildren, double pprice ) {
+	public room (String pname,int padult, int pchildren, double pprice, WebElement pviewdetail) {
 
 		setRoomName(pname);
 		setAdult(padult);
 		setChildren(pchildren);
 		setRoomPrice(pprice);
+		setViewdetail(pviewdetail);
 	}
 	
 	
@@ -30,4 +34,9 @@ public class Room {
 	public void setRoomPrice(double price) {
 		roomPrice = price;
 	}	
+	
+	public void setViewdetail(WebElement pviewdetail) {
+		viewdetail = pviewdetail;
+	}	
+	
 }

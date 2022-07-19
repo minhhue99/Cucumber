@@ -1,5 +1,7 @@
 package com.cucumberFramework.pageObjects;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +13,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.cucumberFramework.helper.WaitHelper;
-import com.google.common.base.CharMatcher;
 import com.cucumberFramework.helper.Constants;
 
 public class BookingPage {
@@ -58,6 +59,12 @@ public class BookingPage {
 	@FindBy(xpath = "/html/body/section[2]/div/div/div/div/div[2]")
 	public List<WebElement> roomList;
 
+	@FindBy(xpath = "//a[contains(@class,'btn btn-success float-right')]")
+	public List<WebElement> listOfViewdetailBtn;
+
+	@FindBy(xpath = "//input[@id='room']")
+	public WebElement roomnumberbox;
+
 	public void clickonViewdetails() {
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("arguments[0].scrollIntoView(true);", viewdetailButton);
@@ -77,26 +84,8 @@ public class BookingPage {
 	}
 
 	public void verify_AdultNumber_ChildrenNumber() {
-//		JavascriptExecutor jss = (JavascriptExecutor) driver;
-//		jss.executeScript("arguments[0].scrollIntoView(true);", viewdetailButton);
-//		for (int countAdult = 1; countAdult <= adultEle.size(); countAdult++) {
-//			String expectedAdultNumberString = adultEle.get(countAdult).getText();
-//			int expectedAdultNumber = Integer.parseInt(expectedAdultNumberString.replaceAll("[^0-9]", ""));
-//			System.out.println(expectedAdultNumber);
-//			if (expectedAdultNumber >= Constants.aduld_number) {	
-//				
-//			}
-//		}
 
-//		for (int countChildren = 0; countChildren <= childrenEle.size(); countChildren++) {
-//			String expectedChildrenNumberString = childrenEle.get(countChildren).getText();
-//			int expectedChildrenNumber = Integer.parseInt(expectedChildrenNumberString.replaceAll("[^0-9]", ""));
-//			System.out.println(expectedChildrenNumber);
-////			if (expectedAdultNumber >= Constants.aduld_number) {
-
-//			}
-
-		List<Room> listOfRoom = new ArrayList<>();
+		List<room> listOfRoom = new ArrayList<room>();
 
 		for (int i = 0; i < roomList.size(); i++) {
 
@@ -117,9 +106,23 @@ public class BookingPage {
 			double Price = Double.parseDouble(price);
 			System.out.println(Price);
 
-		}
-		if (adult >= Constants.aduld_number && children >= Constants.children_number) {
-			
+			WebElement viewdetailBtn = roomList.get(i).findElement(By.xpath("div/a"));
+
+			room r = new room(roomname, adult, children, Price, viewdetailBtn);
+			listOfRoom.add(r);
+			if (adult >= Constants.aduld_number && children >= Constants.children_number) {
+				System.out.println("ok");
+			} else {
+				viewdetailBtn.click();
+				JavascriptExecutor jss = (JavascriptExecutor) driver;
+				jss.executeScript("arguments[0].scrollIntoView(true);", roomnumberbox);
+				int numberofRoom = Integer.parseInt(roomnumberbox.getAttribute("value"));
+				System.out.println("number of room: " + numberofRoom);
+				assertTrue(((numberofRoom * adult) >= Constants.aduld_number)
+						&& ((numberofRoom * children) >= Constants.children_number));
+				break;
+			}
+
 		}
 
 	}

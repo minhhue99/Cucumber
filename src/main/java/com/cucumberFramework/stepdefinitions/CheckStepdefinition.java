@@ -22,22 +22,19 @@ public class CheckStepdefinition extends TestBase {
 		checkPage.enterBookingnumber(bookingnumber);
 	}
 	
-	@When("^I click on Search Submit$")
-	public void I_click_on_search_submit () throws Throwable {
+	@When("^I click on Search button$")
+	public void I_click_on_search_button () throws Throwable {
 		checkPage.clickonSearchsubmit();
 	} 
 	
 	@Then("^I see the displayed booking number as \"([^\"]*)\"$")
 	public void verify_the_booking_number_as (String expectedbookingnumber) throws Throwable {
-		assertTrue(checkPage.expectedBookingnumber.getText().contains(expectedbookingnumber));
+		checkPage.verifybookingnumber(expectedbookingnumber);
 	}
 	
 	@Then("^I see the displayed message as \"([^\"]*)\"$")
 	public void verify_the_displayed_message_as (String expectedmsg) throws Throwable {
 		assertTrue(checkPage.errorsearchmsg.getText().contains(expectedmsg));
-	}
-	
-	
-	
+	}	
 
 }

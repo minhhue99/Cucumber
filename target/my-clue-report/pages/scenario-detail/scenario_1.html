@@ -78,54 +78,27 @@ font-src * data: blob: 'unsafe-inline';"/>
   "data": {
     "labels": [
       "ServiceHooks.initializeTest()",
-      "I am on the Saucedemo page \"https://www.saucedemo.com/\"",
-      "Verify the page title as \"Swag Labs\"",
-      "Enter username \"standard_user\"",
-      "Enter password \"secret_sauce\"",
-      "Click on login button",
-      "Verify default filter dropdown as A-Z",
-      "Change filter dropdown for From Low to High",
-      "Add the first product to the cart",
-      "Verify the cart badge has 1 product",
-      "Add the last product to the cart",
-      "Verify the cart badge value is increased to 2",
-      "Remove the first product from the cart",
-      "Verify the cart badge value is decreased to 1",
-      "Click on the cart",
-      "Verify the added product is available",
+      "Enter check-in date \"2022/07/25\"",
+      "Enter check-out date \"2022/07/27\"",
+      "Enter number of adult",
+      "Enter number of children",
+      "Click on Search button",
+      "I can see the displayed available rooms that meet the criteria",
       "ServiceHooks.endTest(Scenario)"
     ],
     "datasets": [
       {
         "data": [
-          3,
+          5,
           0,
           0,
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
+          1,
+          1
         ],
         "backgroundColor": [
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
-          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -147,27 +120,9 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
-          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -189,27 +144,9 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
-          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -245,7 +182,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 3,
+            "stepSize": 5,
             "display": true
           },
           "stacked": true,
@@ -348,17 +285,17 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-07-12 13:39:34</span>
+            <span class="text-light">2022-07-19 13:45:45</span>
         </div>
     </nav>
     <main role="main" class="container">
         <div class="cluecumber-template">
             <div class="pb-2 mt-4 mb-2 border-bottom">
                     <h5>
-                            <a href="pages/feature-scenarios/feature_0.html">As an end-user I should be able to carry out functions on Saucedemo</a>
-                        <span class="small">src/test/resources/features/Hue/Saucedemo.feature</span>
+                            <a href="pages/feature-scenarios/feature_0.html">Search for available room</a>
+                        <span class="small">src/test/resources/features/Module/SearchForAvailableRoom.feature</span>
                     </h5>
-                    <h3>Verify page title, login function, adding and removing product on Saucedemo</h3>
+                    <h3>Verify that all available rooms are shown when Guest inputs the valid information</h3>
             </div>
 
     <div class="row" id="scenario-detail">
@@ -376,9 +313,11 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-            <li class="list-group-item">Test Runtime:<br>0m 03s 631ms</li>
+            <li class="list-group-item">Test Runtime:<br>0m 09s 266ms</li>
             <li class="list-group-item">
-                    <a href="pages/tag-scenarios/tag_Tag.html">@Tag</a>            </li>
+                    <a href="pages/tag-scenarios/tag_SmokeTest.html">@SmokeTest</a>,
+
+                    <a href="pages/tag-scenarios/tag_RegressionTest.html">@RegressionTest</a>            </li>
             </div>
         </div>
     </div>
@@ -388,19 +327,19 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    15         Steps
+                    6         Steps
 
                 </li>
                 <li class="list-group-item">
-                    0 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    6 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
-                    1 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+                    0 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
        title="failed"><span style="display:none">failed</span></i>
 
                     <br>
-                    14 skipped     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
+                    0 skipped     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
        title="skipped"><span style="display:none">skipped</span></i>
 
                 </li>
@@ -420,392 +359,115 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <li class="list-group-item">
 
 
-                        <div class="row row_failed table-row-failed">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">1.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.i_am_on_the_Saucedemo_page(String)">
-                                    <a href="pages/step-scenarios/step_0490592664.html"><span
-                                                class="keyword">Given </span> I am on the Saucedemo page "<span class="parameter">https://www.saucedemo.com/</span>"</a>
+                                <span data-toggle="tooltip" title="SearchBookingPaymentStepdefinition.enter_checkin_date(String)">
+                                    <a href="pages/step-scenarios/step_1501525744.html"><span
+                                                class="keyword">When </span> Enter check-in date "<span class="parameter">2022/07/25</span>"</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 207ms
+                                0m 00s 366ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
-       title="failed"><span style="display:none">failed</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
-        <div class="row w-100 p-3 m-0 scenarioErrorMessage">
-            <div class="w-100 text-left border border-danger">
-                <pre class="text-danger small p-2">java.lang.ExceptionInInitializerError
-	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
-	at cucumber.deps.com.thoughtworks.xstream.XStream.&#60;init&#62;(XStream.java:574)
-	at cucumber.deps.com.thoughtworks.xstream.XStream.&#60;init&#62;(XStream.java:530)
-	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.&#60;init&#62;(LocalizedXStreams.java:50)
-	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
-	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at com.cucumberFramework.testRunner.TestRunner.feature(TestRunner.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-	at &#10045;.Given I am on the Saucedemo page &#34;<a href='https://www.saucedemo.com/&#34;(src/test/resources/features/Hue/Saucedemo.feature:6)' target='_blank'>https://www.saucedemo.com/&#34;(src/test/resources/features/Hue/Saucedemo.feature:6)</a>
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not &#34;opens java.util&#34; to unnamed module @4470f8a6
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
-	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
-	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
-	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
-	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.&#60;clinit&#62;(TreeMapConverter.java:50)
-	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
-	at cucumber.deps.com.thoughtworks.xstream.XStream.&#60;init&#62;(XStream.java:574)
-	at cucumber.deps.com.thoughtworks.xstream.XStream.&#60;init&#62;(XStream.java:530)
-	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.&#60;init&#62;(LocalizedXStreams.java:50)
-	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
-	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at com.cucumberFramework.testRunner.TestRunner.feature(TestRunner.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-</pre>
-            </div>
-        </div>
                         </div>
 
 
-                        <div class="row row_skipped table-row-skipped">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">2.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.verify_the_title(String)">
-                                    <a href="pages/step-scenarios/step_1880620889.html"><span
-                                                class="keyword">Then </span> Verify the page title as "<span class="parameter">Swag Labs</span>"</a>
+                                <span data-toggle="tooltip" title="SearchBookingPaymentStepdefinition.enter_checkout_date(String)">
+                                    <a href="pages/step-scenarios/step_0509944875.html"><span
+                                                class="keyword">And </span> Enter check-out date "<span class="parameter">2022/07/27</span>"</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 00s 177ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
                         </div>
 
 
-                        <div class="row row_skipped table-row-skipped">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">3.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.login_with_username(String)">
-                                    <a href="pages/step-scenarios/step_918938274.html"><span
-                                                class="keyword">When </span> Enter username "<span class="parameter">standard_user</span>"</a>
+                                <span data-toggle="tooltip" title="SearchBookingPaymentStepdefinition.enter_number_of_adult()">
+                                    <a href="pages/step-scenarios/step_01288345881.html"><span
+                                                class="keyword">And </span> Enter number of adult</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 00s 089ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
                         </div>
 
 
-                        <div class="row row_skipped table-row-skipped">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">4.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.login_with_password(String)">
-                                    <a href="pages/step-scenarios/step_1628340071.html"><span
-                                                class="keyword">And </span> Enter password "<span class="parameter">secret_sauce</span>"</a>
+                                <span data-toggle="tooltip" title="SearchBookingPaymentStepdefinition.enter_number_of_children()">
+                                    <a href="pages/step-scenarios/step_0144936526.html"><span
+                                                class="keyword">And </span> Enter number of children</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 00s 099ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
                         </div>
 
 
-                        <div class="row row_skipped table-row-skipped">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">5.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.click_on_login_button()">
-                                    <a href="pages/step-scenarios/step_655651083.html"><span
-                                                class="keyword">And </span> Click on login button</a>
+                                <span data-toggle="tooltip" title="SearchBookingPaymentStepdefinition.click_on_search_button()">
+                                    <a href="pages/step-scenarios/step_01250677990.html"><span
+                                                class="keyword">When </span> Click on Search button</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 00s 507ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
                         </div>
 
 
-                        <div class="row row_skipped table-row-skipped">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">6.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.verify_default_filter_dropdown()">
-                                    <a href="pages/step-scenarios/step_717326554.html"><span
-                                                class="keyword">Then </span> Verify default filter dropdown as A-Z</a>
+                                <span data-toggle="tooltip" title="SearchForAvailableRoomStepDefinition.I_can_see_the_displayed_available_rooms_that_meet_the_criteria()">
+                                    <a href="pages/step-scenarios/step_01510253357.html"><span
+                                                class="keyword">Then </span> I can see the displayed available rooms that meet the criteria</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 01s 145ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">7.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.change_filter_dropdown_for_from_low_to_high()">
-                                    <a href="pages/step-scenarios/step_1963990412.html"><span
-                                                class="keyword">When </span> Change filter dropdown for From Low to High</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">8.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.add_the_first_product_to_the_cart()">
-                                    <a href="pages/step-scenarios/step_01804379967.html"><span
-                                                class="keyword">When </span> Add the first product to the cart</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">9.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.Verify_the_cart_badge_has_1_product()">
-                                    <a href="pages/step-scenarios/step_01430626737.html"><span
-                                                class="keyword">Then </span> Verify the cart badge has 1 product</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">10.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.add_the_last_product_to_the_cart()">
-                                    <a href="pages/step-scenarios/step_1322620363.html"><span
-                                                class="keyword">When </span> Add the last product to the cart</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">11.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.Verify_the_cart_badge_value_is_increased_to_2()">
-                                    <a href="pages/step-scenarios/step_363786533.html"><span
-                                                class="keyword">Then </span> Verify the cart badge value is increased to 2</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">12.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.remove_the_first_product_from_the_cart()">
-                                    <a href="pages/step-scenarios/step_01511120671.html"><span
-                                                class="keyword">When </span> Remove the first product from the cart</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">13.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.Verify_the_cart_badge_value_is_decreased_to_1()">
-                                    <a href="pages/step-scenarios/step_02061575232.html"><span
-                                                class="keyword">Then </span> Verify the cart badge value is decreased to 1</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">14.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.click_on_the_cart()">
-                                    <a href="pages/step-scenarios/step_1985416817.html"><span
-                                                class="keyword">When </span> Click on the cart</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-9 text-left">
-                                <span class="text-left">15.</span>
-                                <span data-toggle="tooltip" title="SaucedemoStepDefinitions.Verify_the_added_product_is_available()">
-                                    <a href="pages/step-scenarios/step_1671470897.html"><span
-                                                class="keyword">Then </span> Verify the added product is available</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
             <div class="row w-100 p-3 m-0 scenarioAttachment">
@@ -828,7 +490,7 @@ Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field p
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-07-12 13:39:34.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-07-19 13:45:45.</span>
     </div>
 </footer>    </body>
     </html>

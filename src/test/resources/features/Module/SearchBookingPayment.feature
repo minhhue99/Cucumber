@@ -45,14 +45,6 @@ Feature: Search, Booking and Payment functionality
 	When I click on Pay Now button
 	Then I see the success message "Thank you! Your booking has been placed. We will contact you to confirm about the booking soon."
 	
-	@SmokeTest @RegressionTest @Test1
-	Scenario: Verify that all available rooms are shown when inputting the valid information
-	When Enter check-in date "2022/07/27"
-	And Enter check-out date "2022/07/29"
-	And Enter number of adult
-	And Enter number of children
-	When Click on Search button
-	When I can see the displayed available rooms
 	
 	
 	

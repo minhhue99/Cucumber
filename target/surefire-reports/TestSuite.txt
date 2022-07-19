@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.073 s <<< FAILURE! - in TestSuite
-com.cucumberFramework.testRunner.TestRunner.feature[As an end-user I should be able to carry out functions on Saucedemo](1)  Time elapsed: 3.727 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.ExceptionInInitializerError
-	at com.cucumberFramework.testRunner.TestRunner.feature(TestRunner.java:34)
-Caused by: java.lang.ExceptionInInitializerError
-	at com.cucumberFramework.testRunner.TestRunner.feature(TestRunner.java:34)
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @4470f8a6
-	at com.cucumberFramework.testRunner.TestRunner.feature(TestRunner.java:34)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.222 s - in TestSuite

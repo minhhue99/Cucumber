@@ -58,7 +58,7 @@ public class CancelStepdefinition extends TestBase {
 		b = cancelCountafter.size();
 	}
 	
-	@And("^Verify the number of canceled booking is decreased by 1$")
+	@And("^I see that the number of canceled booking is decreased by 1$")
 	public void verify_the_number_of_canceledbooking () throws Throwable {
 		assertEquals(b,a-1);
 	}	

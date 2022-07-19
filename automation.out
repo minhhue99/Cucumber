@@ -1,1 +1,6 @@
-2022-07-18 17:07:11 INFO  ServiceHooks:47 - Verify that all available rooms are shown when inputting the valid information is pass
+2022-07-19 13:07:569 INFO  ServiceHooks:47 - Verify that all available rooms are shown when Guest inputs the valid information is pass
+2022-07-19 13:07:622 INFO  WaitHelper:23 - waiting for element visibilityOf..
+2022-07-19 13:07:246 INFO  WaitHelper:26 - element is visible..
+2022-07-19 13:07:365 INFO  WaitHelper:23 - waiting for element visibilityOf..
+2022-07-19 13:07:411 INFO  WaitHelper:26 - element is visible..
+2022-07-19 13:07:38 INFO  ServiceHooks:47 - Verify that all available rooms are shown when Customer inputs the valid information is pass
