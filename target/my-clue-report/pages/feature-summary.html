@@ -77,32 +77,67 @@ font-src * data: blob: 'unsafe-inline';"/>
             var chart = new Chart(ctx, {
   "data": {
     "labels": [
-      "Search for available room"
+      "Search, Booking and Payment functionality",
+      "Login functionality",
+      "Cancel Booking",
+      "Set up Rooms",
+      "Search for available room",
+      "Check Booking"
     ],
     "datasets": [
       {
         "data": [
+          2,
+          6,
+          1,
+          1,
+          2,
           2
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)"
         ],
         "label": "passed"
       },
       {
         "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)"
         ],
         "label": "failed"
       },
       {
         "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
         ],
         "label": "skipped"
@@ -121,7 +156,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "1 Features"
+            "labelString": "6 Features"
           },
           "stepSize": 0.0
         }
@@ -130,7 +165,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 2,
+            "stepSize": 6,
             "display": true
           },
           "stacked": true,
@@ -233,7 +268,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link text-white" href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-07-19 13:45:45</span>
+            <span class="text-light">2022-07-19 16:52:13</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -259,14 +294,14 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    2         Scenarios
+                    14         Scenarios
 <br>
                     in
-                    1         Feature
+                    6         Features
 
                 </li>
                 <li class="list-group-item">
-                    2 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    14 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -308,7 +343,52 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <tbody>
                     <tr>
                         <td class="text-left"><a
-                                    href="pages/feature-scenarios/feature_0.html">Search for available room</a>
+                                    href="pages/feature-scenarios/feature_3.html">Search, Booking and Payment functionality</a>
+                        </td>
+                        <td class="text-right"><strong>2</strong></td>
+                        <td class="text-right">2</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/feature-scenarios/feature_2.html">Login functionality</a>
+                        </td>
+                        <td class="text-right"><strong>6</strong></td>
+                        <td class="text-right">6</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/feature-scenarios/feature_0.html">Cancel Booking</a>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/feature-scenarios/feature_5.html">Set up Rooms</a>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/feature-scenarios/feature_4.html">Search for available room</a>
+                        </td>
+                        <td class="text-right"><strong>2</strong></td>
+                        <td class="text-right">2</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/feature-scenarios/feature_1.html">Check Booking</a>
                         </td>
                         <td class="text-right"><strong>2</strong></td>
                         <td class="text-right">2</td>
@@ -326,7 +406,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-07-19 13:45:45.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-07-19 16:52:13.</span>
     </div>
 </footer>    </body>
     </html>

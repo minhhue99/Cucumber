@@ -39,4 +39,16 @@ public class room {
 		viewdetail = pviewdetail;
 	}	
 	
+	public int getAdult() {
+		return roomAdult;
+	}
+	
+	public int getChildren() {
+		return roomChildren;
+	}
+	
+	public WebElement getViewDetailEle() {
+		return viewdetail;
+	}
+	
 }

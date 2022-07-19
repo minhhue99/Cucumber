@@ -22,8 +22,8 @@ public class CheckStepdefinition extends TestBase {
 		checkPage.enterBookingnumber(bookingnumber);
 	}
 	
-	@When("^I click on Search button$")
-	public void I_click_on_search_button () throws Throwable {
+	@When("^I will click on Search button$")
+	public void I_will_click_on_search_button () throws Throwable {
 		checkPage.clickonSearchsubmit();
 	} 
 	

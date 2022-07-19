@@ -110,21 +110,20 @@ public class BookingPage {
 
 			room r = new room(roomname, adult, children, Price, viewdetailBtn);
 			listOfRoom.add(r);
-			if (adult >= Constants.aduld_number && children >= Constants.children_number) {
-				System.out.println("ok");
-			} else {
-				viewdetailBtn.click();
-				JavascriptExecutor jss = (JavascriptExecutor) driver;
-				jss.executeScript("arguments[0].scrollIntoView(true);", roomnumberbox);
-				int numberofRoom = Integer.parseInt(roomnumberbox.getAttribute("value"));
-				System.out.println("number of room: " + numberofRoom);
-				assertTrue(((numberofRoom * adult) >= Constants.aduld_number)
-						&& ((numberofRoom * children) >= Constants.children_number));
-				break;
-			}
-
 		}
 
+		for (room roo : listOfRoom) {
+			if ((roo.getAdult() >= Constants.aduld_number) && (roo.getChildren() >= Constants.children_number)) {
+				System.out.println("Pass");
+			} else {
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				waitHelper.WaitForElement(roo.getViewDetailEle(), 10);
+				js.executeScript("arguments[0].click()", roo.getViewDetailEle());
+				int numberofRoom = Integer.parseInt(roomnumberbox.getAttribute("value"));
+				assertTrue(((numberofRoom * roo.getAdult()) >= Constants.aduld_number)
+						&& ((numberofRoom * roo.getChildren()) >= Constants.children_number));
+				break;
+			}
+		}
 	}
-
 }
