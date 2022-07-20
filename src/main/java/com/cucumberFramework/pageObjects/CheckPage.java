@@ -30,13 +30,9 @@ public class CheckPage {
 	@FindBy(xpath = "//input[@class='sb-search-submit']")
 	public WebElement searchSubmit;
 	
-	@FindBy(xpath = "//h1[@class='mmb-blc-title']")
+	@FindBy(xpath = "//h1[normalize-space()='Opps ! No booking found !']")
 	public WebElement errorsearchmsg;
 	
-	public void clickonSearchicon() {
-		searchIcon.click();
-	}
-
 	public void enterBookingnumber(String input) {
 		waitHelper.WaitForElement(searchField, 10);
 		searchField.sendKeys(input);

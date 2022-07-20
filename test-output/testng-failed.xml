@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="testDownClass"/>
-          <include name="feature"/>
+          <include name="feature" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.cucumberFramework.testRunner.TestRunner -->
     </classes>

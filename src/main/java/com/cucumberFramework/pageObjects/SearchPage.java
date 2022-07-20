@@ -31,15 +31,7 @@ public class SearchPage {
 
 	@FindBy(xpath = "//input[@value='Search']")
 	public WebElement searchButton;
-
-	public void enterCheckinDate(String input) {
-		checkinField.sendKeys(input);
-	}
-
-	public void enterCheckoutDate(String input) {
-		checkoutField.sendKeys(input);
-	}
-
+	
 	public void enterNumberofAdult() {
 		String adultNumberString = Integer.toString(Constants.aduld_number);
 		adultField.sendKeys(adultNumberString);

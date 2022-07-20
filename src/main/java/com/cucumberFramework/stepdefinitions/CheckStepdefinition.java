@@ -5,25 +5,22 @@ import static org.testng.Assert.assertTrue;
 import com.cucumberFramework.pageObjects.CheckPage;
 import com.cucumberFramework.testBase.TestBase;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class CheckStepdefinition extends TestBase {
 	
 	CheckPage checkPage = new CheckPage (driver);
-	
-	@When("^I click on Search icon$")
-	public void I_click_on_search_icon () throws Throwable {
-		checkPage.clickonSearchicon();
-	}
-	
-	@When("^Enter Booking number \"([^\"]*)\"$")
-	public void enter_booking_number (String bookingnumber) throws Throwable {
+		
+	@When("^I click on Search icon and enter Booking number \"([^\"]*)\"$")
+	public void I_click_on_search_icon_and_enter_booking_number (String bookingnumber) throws Throwable {
+		checkPage.searchIcon.click();
 		checkPage.enterBookingnumber(bookingnumber);
 	}
 	
-	@When("^I will click on Search button$")
-	public void I_will_click_on_search_button () throws Throwable {
+	@And("^Click on Search button$")
+	public void click_on_search_button () throws Throwable {
 		checkPage.clickonSearchsubmit();
 	} 
 	

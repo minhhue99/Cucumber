@@ -27,12 +27,12 @@ public class SearchBookingPaymentStepdefinition  extends TestBase {
 	
 	@When("^Enter check-in date \"([^\"]*)\"$")
 	public void enter_checkin_date (String checkin) throws Throwable {
-		searchPage.enterCheckinDate(checkin);
+		searchPage.checkinField.sendKeys(checkin);
 	}
 	
 	@And("^Enter check-out date \"([^\"]*)\"$")
 	public void enter_checkout_date (String checkout) throws Throwable {
-		searchPage.enterCheckoutDate(checkout);
+		searchPage.checkoutField.sendKeys(checkout);
 	}
 	
 	@And("^Enter number of adult$")
@@ -45,8 +45,8 @@ public class SearchBookingPaymentStepdefinition  extends TestBase {
 		searchPage.enterNumberofChildren();
 	}
 	
-	@When("^Click on Search button$")
-	public void click_on_search_button () throws Throwable {
+	@When("^I click on the Search button$")
+	public void I_click_on_the_search_button () throws Throwable {
 		searchPage.clickonSearch();
 	}
 	

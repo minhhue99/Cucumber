@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="130.731" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="135.507" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_331\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\hue.le\AppData\Local\Temp\surefire3281282117993595959\surefirebooter2232779114524512471.jar C:\Users\hue.le\AppData\Local\Temp\surefire3281282117993595959 2022-07-19T16-49-58_356-jvmRun1 surefire2573485625639599183tmp surefire_04152745856527366811tmp"/>
+    <property name="sun.java.command" value="C:\Users\hue.le\AppData\Local\Temp\surefire2870303497594522608\surefirebooter289642484220776429.jar C:\Users\hue.le\AppData\Local\Temp\surefire2870303497594522608 2022-07-20T18-04-30_777-jvmRun1 surefire5330333318918907416tmp surefire_06319959013971663290tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\hue.le\eclipse-workspace\HueProject\target\test-classes;C:\Users\hue.le\eclipse-workspace\HueProject\target\classes;C:\Users\hue.le\.m2\repository\io\cucumber\cucumber-java\1.2.6\cucumber-java-1.2.6.jar;C:\Users\hue.le\.m2\repository\io\cucumber\cucumber-core\1.2.6\cucumber-core-1.2.6.jar;C:\Users\hue.le\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\hue.le\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\hue.le\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\hue.le\.m2\repository\io\cucumber\cucumber-testng\1.2.6\cucumber-testng-1.2.6.jar;C:\Users\hue.le\.m2\repository\io\cucumber\gherkin\22.0.0\gherkin-22.0.0.jar;C:\Users\hue.le\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\hue.le\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\hue.le\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\hue.le\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\hue.le\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\hue.le\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hue.le\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\hue.le\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\hue.le\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\hue.le\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\hue.le\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\hue.le\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\hue.le\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\hue.le\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\hue.le\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\hue.le\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\hue.le\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\hue.le\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\hue.le\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\hue.le\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\hue.le\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\hue.le\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\hue.le\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\hue.le\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\hue.le\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\hue.le\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\hue.le\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\hue.le"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\hue.le\AppData\Local\Temp\surefire3281282117993595959\surefirebooter2232779114524512471.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hue.le\AppData\Local\Temp\surefire2870303497594522608\surefirebooter289642484220776429.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_331\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_331\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_331\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_331\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_331\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_331\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_331\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_331\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,226 +61,171 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="feature[Cancel Booking](1)" classname="com.cucumberFramework.testRunner.TestRunner" time="18.936">
-    <system-out><![CDATA[2022-07-19 16:07:772 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:509 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:620 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:658 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:693 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:290 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:970 INFO  ServiceHooks :47 - Verify that user can cancel a booking if check-in date has not come yet is pass
+  <testcase name="feature[Cancel Booking](1)" classname="com.cucumberFramework.testRunner.TestRunner" time="19.959">
+    <system-out><![CDATA[2022-07-20 18:07:797 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:506 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:617 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:682 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:694 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:304 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:184 INFO  ServiceHooks :47 - Verify that user can cancel a booking if check-in date has not come yet is pass
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 64695
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 55626
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:04:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:04:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
   </testcase>
-  <testcase name="feature[Check Booking](2)" classname="com.cucumberFramework.testRunner.TestRunner" time="11.949">
-    <system-out><![CDATA[2022-07-19 16:07:01 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:53 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:762 INFO  ServiceHooks :47 - Verify that the booking details will be displayed by using the valid booking number is pass
-2022-07-19 16:07:926 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:976 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:554 INFO  ServiceHooks :47 - Verify that a message is shown when entering invalid booking number into the Search field is pass
+  <testcase name="feature[Check Booking](2)" classname="com.cucumberFramework.testRunner.TestRunner" time="12.576">
+    <system-out><![CDATA[2022-07-20 18:07:44 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:94 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:718 INFO  ServiceHooks :47 - Verify that the booking details will be displayed by using the valid booking number is pass
+2022-07-20 18:07:323 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:373 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:980 INFO  ServiceHooks :47 - Verify that a message is shown when entering invalid booking number into the Search field is pass
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 55181
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 61576
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:04:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:04:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 52942
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 64656
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
   </testcase>
-  <testcase name="feature[Login functionality](3)" classname="com.cucumberFramework.testRunner.TestRunner" time="42.555">
-    <system-out><![CDATA[2022-07-19 16:07:748 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:326 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:425 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:466 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:855 INFO  ServiceHooks :47 - Verify successful login with valid Admin account is pass
-2022-07-19 16:07:30 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:619 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:721 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:756 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:903 INFO  ServiceHooks :47 - Verify successful login with valid Staff account is pass
-2022-07-19 16:07:141 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:719 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:817 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:857 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:260 INFO  ServiceHooks :47 - Verify successful login with valid Customer account is pass
-2022-07-19 16:07:284 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:897 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:984 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:17 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:225 INFO  ServiceHooks :47 - Verify error message when loginning with wrong password is pass
-2022-07-19 16:07:196 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:798 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:912 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:952 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:283 INFO  ServiceHooks :47 - Verify error message when loginning with wrong username is pass
-2022-07-19 16:07:186 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:765 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:871 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:913 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:269 INFO  ServiceHooks :47 - Verify error message when loginning with wrong username and password is pass
+  <testcase name="feature[Login functionality](3)" classname="com.cucumberFramework.testRunner.TestRunner" time="43.016">
+    <system-out><![CDATA[2022-07-20 18:07:364 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:969 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:68 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:113 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:504 INFO  ServiceHooks :47 - Verify successful login with valid Admin account is pass
+2022-07-20 18:07:626 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:297 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:461 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:495 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:627 INFO  ServiceHooks :47 - Verify successful login with valid Staff account is pass
+2022-07-20 18:07:792 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:395 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:513 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:556 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:863 INFO  ServiceHooks :47 - Verify successful login with valid Customer account is pass
+2022-07-20 18:07:992 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:597 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:715 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:751 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:967 INFO  ServiceHooks :47 - Verify error message when loginning with wrong password is pass
+2022-07-20 18:07:965 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:562 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:664 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:704 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:31 INFO  ServiceHooks :47 - Verify error message when loginning with wrong username is pass
+2022-07-20 18:07:102 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:716 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:849 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:888 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:314 INFO  ServiceHooks :47 - Verify error message when loginning with wrong username and password is pass
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 56237
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 65104
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 59280
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 56152
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 63619
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 54008
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 53559
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 51603
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:50:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:50:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 60503
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 53750
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:51:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:51:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 59552
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 51404
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:51:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:51:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
   </testcase>
-  <testcase name="feature[Search, Booking and Payment functionality](4)" classname="com.cucumberFramework.testRunner.TestRunner" time="25.709">
-    <system-out><![CDATA[2022-07-19 16:07:342 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:399 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:361 INFO  ServiceHooks :47 - Verify that Guest can search by the valid information, select and book a room, make payment with credit card is pass
-2022-07-19 16:07:404 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:07 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:109 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:145 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:918 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:945 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:866 INFO  ServiceHooks :47 - Verify that Customer can search by the valid information, select and book a room, make payment with credit card is pass
+  <testcase name="feature[Search, Booking and Payment functionality](4)" classname="com.cucumberFramework.testRunner.TestRunner" time="27.314">
+    <system-out><![CDATA[2022-07-20 18:07:419 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:468 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:425 INFO  ServiceHooks :47 - Verify that Guest can search by the valid information, select and book a room, make payment with credit card is pass
+2022-07-20 18:07:159 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:741 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:865 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:917 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:253 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:313 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:302 INFO  ServiceHooks :47 - Verify that Customer can search by the valid information, select and book a room, make payment with credit card is pass
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 53197
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 63671
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:51:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:05:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:05:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 60054
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 51040
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:51:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:06:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:51:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:06:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
   </testcase>
-  <testcase name="feature[Search for available room](5)" classname="com.cucumberFramework.testRunner.TestRunner" time="19.203">
-    <system-out><![CDATA[Premier Apartment
-4
-1
-350.0
-ABCD
-2
-2
-150.0
-Junior Suite
-2
-1
-200.0
-Deluxe
-2
-2
-250.0
-Grand Apartment
-4
-2
-400.0
-Deluxe Twin
-2
-2
-250.0
-Superior City View
-2
-2
-150.0
-Abc
+  <testcase name="feature[Search for available room](5)" classname="com.cucumberFramework.testRunner.TestRunner" time="19.551">
+    <system-out><![CDATA[Abc
 5
 5
 500.5
-
-2
-2
-600.0
-2022-07-19 16:07:652 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:669 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:411 INFO  ServiceHooks :47 - Verify that all available rooms are shown when Guest inputs the valid information is pass
-2022-07-19 16:07:640 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:242 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:339 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:372 INFO  WaitHelper :26 - element is visible..
-Abc
-5
-5
-500.5
-Premier Apartment
-4
-1
-350.0
-Superior City View
-2
-2
-150.0
-Junior Suite
-2
-1
-200.0
 
 2
 2
@@ -289,59 +234,99 @@ Deluxe
 2
 2
 250.0
-Deluxe Twin
+Junior Suite
+2
+1
+200.0
+Superior City View
 2
 2
-250.0
+150.0
 Grand Apartment
 4
 2
 400.0
-ABCD
+Deluxe Twin
 2
 2
-150.0
+250.0
 Pass
-2022-07-19 16:07:80 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:93 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:870 INFO  ServiceHooks :47 - Verify that all available rooms are shown when Customer inputs the valid information is pass
+2022-07-20 18:07:185 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:204 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:962 INFO  ServiceHooks :47 - Verify that all available rooms are shown when Guest inputs the valid information is pass
+2022-07-20 18:07:498 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:83 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:205 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:246 INFO  WaitHelper :26 - element is visible..
+Abc
+5
+5
+500.5
+Grand Apartment
+4
+2
+400.0
+Junior Suite
+2
+1
+200.0
+
+2
+2
+600.0
+Superior City View
+2
+2
+150.0
+Deluxe Twin
+2
+2
+250.0
+Deluxe
+2
+2
+250.0
+Pass
+2022-07-20 18:07:08 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:24 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:742 INFO  ServiceHooks :47 - Verify that all available rooms are shown when Customer inputs the valid information is pass
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 65316
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 51852
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:51:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:06:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:51:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:06:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 64640
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 61614
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:51:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:06:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:51:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:06:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
   </testcase>
-  <testcase name="feature[Set up Rooms](6)" classname="com.cucumberFramework.testRunner.TestRunner" time="10.593">
-    <system-out><![CDATA[2022-07-19 16:07:186 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:784 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:888 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:924 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:909 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:953 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:702 INFO  WaitHelper :23 - waiting for element visibilityOf..
-2022-07-19 16:07:770 INFO  WaitHelper :26 - element is visible..
-2022-07-19 16:07:67 INFO  ServiceHooks :47 - Verify that users can add a new room to the system is pass
+  <testcase name="feature[Set up Rooms](6)" classname="com.cucumberFramework.testRunner.TestRunner" time="11.734">
+    <system-out><![CDATA[2022-07-20 18:07:230 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:821 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:941 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:990 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:374 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:428 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:553 INFO  WaitHelper :23 - waiting for element visibilityOf..
+2022-07-20 18:07:633 INFO  WaitHelper :26 - element is visible..
+2022-07-20 18:07:58 INFO  ServiceHooks :47 - Verify that users can add a new room to the system is pass
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 65022
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 64431
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 19, 2022 4:52:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 20, 2022 6:06:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 19, 2022 4:52:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 20, 2022 6:06:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 103
 ]]></system-err>
   </testcase>

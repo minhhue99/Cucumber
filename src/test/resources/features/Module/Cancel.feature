@@ -7,6 +7,6 @@ Feature: Cancel Booking
   When I click on Angel Down on the top right of the screen
   And Click on My Bookings button
   And Click on Cancel button
-  When I select the reason
-  And Click on Cancel Submit button
+  And Select the reason
+  And Click on Cancel button to submit
 	Then I see that the number of canceled booking is decreased by 1

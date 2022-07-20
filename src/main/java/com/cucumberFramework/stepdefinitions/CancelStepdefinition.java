@@ -20,8 +20,8 @@ public class CancelStepdefinition extends TestBase {
 	CancelPage cancelPage = new CancelPage (driver);
 	LoginPage loginPage = new LoginPage (driver);
 	
-	int a;
-	int b;
+	int numberofcanceledbookingBefore;
+	int numberofcanceledbookingAfter;
 	
 	@Given("^I login with customer account$")
 	public void I_login_with_customer_account () throws Throwable {
@@ -39,27 +39,27 @@ public class CancelStepdefinition extends TestBase {
 	}
 	
 	@And("^Click on Cancel button$")
-	public void I_click_on_cancel_button () throws Throwable {
+	public void click_on_cancel_button () throws Throwable {
 		List<WebElement> cancelCountbefore = cancelPage.cancelButtonList;
-		a = cancelCountbefore.size();
+		numberofcanceledbookingBefore = cancelCountbefore.size();
 		cancelPage.clickonCancelbooking();
 	}
 	
-	@When("^I select the reason$")
-	public void I_select_the_reason () throws Throwable {
+	@And("^Select the reason$")
+	public void select_the_reason () throws Throwable {
 		cancelPage.selectrandomReason();
 	}
 	
-	@And("^Click on Cancel Submit button$")
-	public void I_click_on_cancel_submit_button () throws Throwable {
+	@And("^Click on Cancel button to submit$")
+	public void click_on_cancel_button_to_submit () throws Throwable {
 		cancelPage.cancelsubmitButton.click();
 		Thread.sleep(5000);
 		List<WebElement> cancelCountafter = cancelPage.cancelButtonList;
-		b = cancelCountafter.size();
+		numberofcanceledbookingAfter = cancelCountafter.size();
 	}
 	
 	@And("^I see that the number of canceled booking is decreased by 1$")
-	public void verify_the_number_of_canceledbooking () throws Throwable {
-		assertEquals(b,a-1);
+	public void I_see_that_the_number_of_canceled_booking_is_decreased_by_1 () throws Throwable {
+		assertEquals(numberofcanceledbookingAfter,numberofcanceledbookingBefore - 1);
 	}	
 }

@@ -7,7 +7,7 @@ Feature: Search, Booking and Payment functionality
 	And Enter check-out date "2022/07/25"
 	And Enter number of adult
 	And Enter number of children
-	When Click on Search button
+	When I click on the Search button
 	When Click on View Details button
 	When Click on Book Now button
 	When Enter Fullname "Le Nu Minh Hue"
@@ -31,7 +31,7 @@ Feature: Search, Booking and Payment functionality
 	And Enter check-out date "2022/07/21"
 	And Enter number of adult
 	And Enter number of children
-	When Click on Search button
+	When I click on the Search button
 	When Click on View Details button
 	When Click on Book Now button
 	And Enter Phone "0944067799"

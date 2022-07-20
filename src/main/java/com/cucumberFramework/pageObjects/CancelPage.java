@@ -52,7 +52,7 @@ public class CancelPage {
 		Select Select_dd = new Select(cancelDropdown);
 		List<WebElement> dd = Select_dd.getOptions();
 		int countsize = dd.size();
-		int option = ThreadLocalRandom.current().nextInt(0, countsize + 1);
+		int option = ThreadLocalRandom.current().nextInt(0, countsize - 1);
 		Select_dd.selectByIndex(option);
 	}
 	
